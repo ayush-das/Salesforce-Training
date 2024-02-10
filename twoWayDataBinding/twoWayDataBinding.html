@@ -1,0 +1,16 @@
+<template>
+    <lightning-card title="Two Way Data Binding">
+         <div>
+            <lightning-input type="text" label="helpText" onchange={handleChange}></lightning-input>
+         </div>
+
+         <div>
+            
+             <!--The value entered first is stored in Js and we use it here-->
+            <lightning-input type="text" label="helpText" value={userValue}></lightning-input>
+         </div>
+
+
+    </lightning-card>
+    
+</template>
