@@ -1,1 +1,11 @@
+//Apex Class
 
+
+public class AccountController {
+    @AuraEnabled(cacheable=true)
+    public static List<Account> getAccounts(){
+        List<Account> acc=[SELECT Id, Name, Industry, Phone FROM Account LIMIT 10];
+        
+        return acc;
+    }
+}
