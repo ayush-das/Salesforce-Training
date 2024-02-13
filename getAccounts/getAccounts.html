@@ -1,0 +1,19 @@
+<!-- accountList.html -->
+<template>
+    <lightning-card title="Account Records">
+        <div class="slds-m-around_medium">
+            <template if:true={accounts}>
+                <lightning-datatable
+                    key-field="Id"
+                    data={accounts}
+                    columns={columns}>
+                </lightning-datatable>
+            </template>
+<template if:true={error}>
+                <div class="slds-text-color_error">
+                    {error}
+                </div>
+            </template>
+</div>
+</lightning-card>
+</template>
