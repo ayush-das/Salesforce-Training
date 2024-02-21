@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title="Receiver">
+        <div style="margin-left: 20px;">
+            Message Received From Sender:<strong>{messageReceived}</strong>
+        </div>
+        <br>
+
+        <lightning-button label="Subscribe" onclick={handleSubscribe} style="margin-left: 20px;margin-right:20px;"></lightning-button>
+
+        <lightning-button label="Un Subscribe" onclick={handleUnSubscribe}></lightning-button>
+
+    </lightning-card>
+</template>
