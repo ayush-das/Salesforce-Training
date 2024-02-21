@@ -1,0 +1,19 @@
+<template>
+    <lightning-card title="Parent To Child Communication using Primitive Data">
+
+        <div class="slds-p-horizon_small" style="border:solid">
+            <lightning-input type="text" name="input1" label="Enter Message" onchange={changeText}>
+
+            </lightning-input>
+
+            <lightning-button 
+              variant="base"
+              label="Send" 
+              onclick={PassToChild} 
+            ></lightning-button>
+        </div>
+          
+        <c-primitive-type-child message1={sendData}></c-primitive-type-child>
+        
+    </lightning-card>
+</template>
